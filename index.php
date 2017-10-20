@@ -18,7 +18,7 @@ if(isset($_POST['btn-login']))
 	$res=mysql_query("SELECT user_id, user_name, user_pass FROM users WHERE user_email='$email'");
 	$row=mysql_fetch_array($res);
 	
-	$count = mysql_num_rows($res); // ifre uname/pass correct it returns must be 1 row
+	$count = mysql_num_rows($res); // if uname/pass correct it returns must be 1 row
 	
 	if($count == 1 && $row['user_pass']==md5($upass))
 	{
