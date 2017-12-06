@@ -4,7 +4,7 @@ if(!mysql_connect("localhost","root","root"))
 {
 	die('oops connection problem ! --> '.mysql_error());
 }
-if(!mysql_select_db("dbtest"))
+if(!mysql_select_db("mydb"))
 {
 	die('oops database selection problem ! --> '.mysql_error());
 }
